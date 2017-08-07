@@ -1,0 +1,20 @@
+---
+title: James Aung - Middleman - Team
+---
+
+<div id="team">
+  <div class="team-content">
+    <h1>This site was built by the awesome team of</h1>
+    <ul class="list-inline text-center">
+      <% data.users.each do |user| %>
+      <li>
+        <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{user.github_nickname}", class: "img-circle" %>
+        <h3><%= user.name %></h3>
+        <a href="https://github.com/<% user.github_nickname %>/">
+          <h6><i class="fa fa-github"></i> <%= user.github_nickname.capitalize %></h6>
+        </a>
+      </li>
+    <% end %>
+</ul>
+  </div>
+</div>
