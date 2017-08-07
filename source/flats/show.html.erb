@@ -1,0 +1,25 @@
+---
+title: James Aung - Middleman - Flat <%= owner %>
+---
+<div id="show">
+  <div class="container">
+    <% flat = data.flats[owner] %>
+    <div class="row">
+      <div class="col-xs-21 col-sm-6">
+        <div class="flat">
+          <div class="owner">
+            <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class: "img-circle" %>
+
+            <p><%= flat.name %></p>
+          </div>
+          <div class="flat-info">
+            <h1><%= flat.description %></h1>
+
+            <p><%= flat.city_name %></p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
